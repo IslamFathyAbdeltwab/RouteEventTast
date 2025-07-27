@@ -1,0 +1,39 @@
+<nav class="bg-slate-800  text-white  shadow-md">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex justify-between h-16 items-center">
+      
+      <!-- Left: Logo -->
+      <div routerLink="/home" class="flex-shrink-0 text-2xl font-bold tracking-wide">
+        NOVA
+      </div>
+
+      <!-- Center: Navigation Links (Desktop) -->
+      <div class="hidden md:flex space-x-8">
+        <a routerLink="/home" class="hover:text-indigo-400 pointer transition duration-200">Home</a>
+        <a routerLink="/home" class="hover:text-indigo-400 transition duration-200">Products</a>
+        <a routerLink="/home" class="hover:text-indigo-400 transition duration-200">Categories</a>
+        <a routerLink="/home" class="hover:text-indigo-400 transition duration-200">Order</a>
+      </div>
+
+      <!-- Right: Dark Mode & Mobile Menu Toggle -->
+      <div class="flex items-center space-x-4">
+        <!-- Dark Mode Button -->
+        <button id="darkModeToggle" class="text-white dark:text-gray-900 hover:text-yellow-400 transition duration-200 text-xl">
+          🌙
+        </button>
+        <!-- Mobile Hamburger Menu Button (visible on mobile only) -->
+        <button id="mobileMenuBtn" class="md:hidden text-white dark:text-gray-900 text-2xl focus:outline-none">
+          ☰
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Menu (Hidden by default) -->
+    <div id="mobileMenu" class="md:hidden hidden flex-col mt-2 space-y-2 text-white dark:text-gray-900">
+      <a routerLink="/home" routerLinkActive="router-link-active"  class="block hover:text-indigo-400">Home</a>
+      <a  class="block hover:text-indigo-400">Products</a>
+      <a  class="block hover:text-indigo-400">Categories</a>
+      <a  class="block hover:text-indigo-400">Order</a>
+    </div>
+  </div>
+</nav>
